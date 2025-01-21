@@ -16,7 +16,7 @@ pipeline {
                 sh '''
                     docker build . -t mayurwagh/com-backend:latest
                     docker push mayurwagh/com-backend:latest
-                    docker rmi mayurmwagh/com-backend:latest
+                    docker rmi mayurwagh/com-backend:latest
                     kubectl apply -f ./yaml/
                 '''
             }
